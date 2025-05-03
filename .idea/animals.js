@@ -87,19 +87,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     })
                     .catch(error => console.error(error));
 
-                const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-                const apiUrl2 = 'https://some-random-api.ml/animal/fox';
-
-                const factResponse = await fetch(proxyUrl + apiUrl2, {
-                    headers: {
-                        'X-Requested-With': 'XMLHttpRequest'
-                    }
-                });
-
-                if (!response.ok) {
-                    throw new Error('Ошибка при загрузке имени');
-                }
-
+                const factResponse = await fetch('https://some-random-api.ml/animal/fox');
                 const factData = await factResponse.json();
                 fact = await translateText(factData.fact);
             }
