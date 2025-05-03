@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайные люди</title>
+    <link rel="stylesheet" href="humans.css">
+</head>
+<body>
+<h1>Случайные люди</h1>
+<div class="controls">
+    <button id="loadBtn">Загрузить данные</button>
+    <div class="filter-group">
+        <span>Фильтр по полу:</span>
+        <select id="genderFilter">
+            <option value="all">Все</option>
+            <option value="Мужчина">Мужчины</option>
+            <option value="Женщина">Женщины</option>
+        </select>
+    </div>
+</div>
+<div id="tableContainer"></div>
+<script type="module" src="humans.js"></script>
+</body>
+</html>

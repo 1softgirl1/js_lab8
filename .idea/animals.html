@@ -2,19 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Random Animals</title>
-    <link rel="stylesheet" href="animals.css">
 </head>
 <body>
 <main>
-    <section id="loader">
-        <div class="loader-container">
-            <div class="loader"></div>
-            <p class="loader-text">Браузерные гномы собирают страницу...</p>
+    <section id="rand_name">
+        <div class="container">
+            <h1>Добро пожаловать, странник!</h1>
+            <p id="welcomeText">Я буду звать тебя <span id="name">...</span>, ок?</p>
+            <button id="next">Ладно</button>
+            <button id="refresh">А может не надо?..</button>
+        </div>
+    </section>
+
+    <section id="choose_side" style="display:none;">
+        <div class="container">
+            <h1>На чьей ты стороне?</h1>
+            <div class="buttons">
+                <button id="cats">Коты</button>
+                <button id="dogs">Собаки</button>
+                <button id="foxes">Лисы</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="random_fact" style="display:none;">
+        <div class="container">
+            <img id="animal_img" src="" style="max-width: 500px; max-height: 500px;" referrerpolicy="no-referrer">
+            <p id="fact"></p>
+            <button id="upd_btn">Обновить</button>
         </div>
     </section>
 </main>
-
-
+<script src="animals.js"></script>
 </body>
 </html>

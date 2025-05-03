@@ -7,5 +7,9 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//1softgirl1/js_lab8.git"
+  },
   "description": ""
 }

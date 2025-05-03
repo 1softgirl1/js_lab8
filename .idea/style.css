@@ -6,12 +6,17 @@ body {
     color: #333;
 }
 
+header {
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
 section {
     max-width: 500px;
     margin: 50px auto;
     padding: 30px;
-    background: rgba(80, 118, 158, 0.56);
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     text-align: center;
@@ -22,19 +27,16 @@ h1 {
     margin-bottom: 10px;
     text-align: center;
 }
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-    color: #ffffff;
+
+span {
+    color: #cf2e80;
 }
+
 button {
-    background-color: #7260e8;
-    color: white;
-    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom-width: medium;
+    border-bottom-color: black;
     padding: 12px 30px;
     border-radius: 5px;
     font-size: 16px;
@@ -43,15 +45,16 @@ button {
 }
 
 button:hover {
-    background-color: #42398a;
+    background-color: #e4b6d4;
 }
 
-button:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-color: black;
 }
 
-button:disabled:hover {
-    background-color: #cccccc;
+td {
+    padding: 12px 0;
+    text-align: center;
 }
-
